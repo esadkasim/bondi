@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    height: 10000px;
+
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    z-index: 999;
+}
+nav .logo img{
+    width: 40px;
+    height: 30px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+nav ul li {
+    margin: 10px;
+    padding: 5px;
+    
+  
+}
+nav ul li:hover{
+   color: #777;
+}
+/* Temel stil */
+nav input {
+    height: 30px;
+    width: 300px;
+    padding: 10px; /* içerikle ilgili boşluk */
+    padding-left: 30px;
+    border: 1px solid #ccc; /* kenarlık */
+    border-radius: 5px; /* köşe yuvarlama */
+    width: 300px; /* genişlik */
+    color: #837d7d;
+    
+    
+}
+#search{
+    position: relative;
+}
+#icon{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #777; /* simge rengi */
+        z-index: 5;
+
+}
+nav input:focus,
+nav input:hover {
+    border-color: #000000; /* renk değişikliği */
+    box-shadow: 0 0 5px rgba(12, 13, 14, 0.5); /* gölge efekti */
+    outline: none; /* odak çerçevesini kaldırma */
+}
+.bar{
+    height: 25px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    top: 50px;
+    color: antiquewhite;
+    z-index: 998;
+}
+.bar ul{
+    list-style: none;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bar ul li{
+    border: solid white 1px;
+    width: 20%;
+    text-align: center;
+}
+.section1{
+    background: url(./photo-1520531158340-44015069e78e.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
